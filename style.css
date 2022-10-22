@@ -136,7 +136,7 @@ body {
 .links button{
 	margin: 1rem;
 	height: 50px;
-	background-color: rgba(32, 189, 84, 0.308);
+	background-color: rgba(32, 189, 84, 0.3);
 	border-color: rgba(0, 255, 42, 0.9);
 }
 .links a{
