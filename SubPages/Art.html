@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+
+<body>
+
+<div class="container">
+
+	<div class="image-container">
+		<div class="image"><img src="../Pictures/img_01.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_02.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_03.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_04.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_05.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_06.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_07.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_08.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_09.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_10.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_11.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_12.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_13.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_14.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_15.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_16.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_17.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_18.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_19.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_20.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_21.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_22.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_23.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_24.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_25.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_26.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_27.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_28.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_29.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_30.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_31.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_32.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_33.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_34.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_35.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_36.jpeg" alt=""></div>
+		<div class="image"><img src="../Pictures/img_37.jpeg" alt=""></div>
+	</div>
+
+	<div class="popup-image">
+		<span>&times;</span>
+		<img src="../Pictures/img_0c.jpegof" alt="">
+	</div>
+</div>
+
+	<div class="SideNav">
+		<div class="SideNavHome SideNavs" onclick="location.href='../index.html';" style="cursor: pointer">
+			<a class="ArtC">Home</a>
+		</div>
+		<div class="SideNavArt activeSideNav SideNavs">
+			<a class="ArtC">Ice Roads</a>
+		</div>
+		<div class="SideNavGames SideNavs" onclick="location.href='Games.html';" style="cursor: pointer">
+			<a class="ArtC">Temp 1</a>
+		</div>
+		<div class="SideNavProjects SideNavs" onclick="location.href='Projects.html';" style="cursor: pointer">
+			<a class="ArtC">Temp 2</a>
+		</div>
+	</div>
+
+
+<script>
+	
+document.querySelectorAll('.image-container img').forEach(image =>{
+	image.onclick = () =>{
+		document.querySelector('.popup-image').style.display = 'block';
+		document.querySelector('.popup-image img').src = image.getAttribute('src');
+	}
+});
+
+document.querySelector('.popup-image span').onclick = () =>{
+	document.querySelector('.popup-image').style.display = 'none';
+}
+
+</script>
+
+
+</body>
+</html>
+
+			
+			
+			
